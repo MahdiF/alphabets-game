@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+	If you're checking this source code that means you're awesome.
+	Come and say hi to me on Twitter @mahdif
+	Or drop me an email: me [ at ] mahdif.com
+	-->
+
+	<title>English Alphabets Game</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta charset="UTF-8">
+
+	<script src="js/habibiScript.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+	<meta name="description" content="A simple game to teach kids the English alphabets." />
+
+	<!-- Open Graph stuff -->
+	<meta property="og:title" content="English Alphabets Game" />
+	<meta property="og:site_name" content="English Alphabets Game" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://mahdif.github.io/alphabets-game/" />
+	<meta property="og:image" content="http://mahdif.github.io/alphabets-game/images/im-og_image.png" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#cc0000">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#000000">
+
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-3416596-7', 'auto');
+	ga('send', 'pageview');
+	</script>
+
+</head>
+<body>
+	<audio preload="auto">
+		<source id="oggSource" src="sounds/ogg/like-glass.ogg" type="audio/ogg">
+		<source id="mp3Source" src="sounds/mp3/like-glass.mp3" type="audio/mp3">
+		Oops! Looks like you're using an old browser, try using a modern browser like Google Chrome, Firefox or even Safari.
+	</audio>
+	<div class="main-cont">
+
+		<div id="about-cont">
+			<div class="content-wrapper">
+				<div class="about-white-bg">
+					<h2 class="about-title">A simple game to teach kids the English alphabets.</h2>
+					<div class="about-image"></div>
+					<p class="about-text">
+						Was created on a Saturday night as an experiment 💩 by <a href="https://twitter.com/mahdif" target="_blank">@mahdif</a>.
+					</p>
+					<p class="about-text">
+						You can freely fork this tiny project on <a href="#">GitHub.</a>
+					</p>
+					<p class="about-text">
+						Check out my other 🙈 <a href="http://mahdif.com/lab/" target="_blank">experiments</a>.
+					</p>
+					<hr>
+					<p class="about-text text-sounds-source">
+						Alphabet sounds from <a href="http://www.theblog.ca/mp3-audio-files-alphabet" target="_blank">Peter's Useful Crap</a>
+					</p>
+					<button id="hide-button" type="button" name="button">Hide</button>
+				</div>
+			</div>
+		</div>
+		<div class="char-cont">
+			<p id="big-char" class="char animationHabibi">
+				Type any letter
+			</p>
+			<button id="show-keyboard-button" class="habibi-button" type="button" name="button">Show keyboard</button>
+			<input id="mobile-text-input" type="text" name="name" value="oh you! you got me! let's chat @mahdif">
+		</div>
+		<footer>
+			<button id="mute-button" class="habibi-button" type="button" name="button">Mute Sounds</button>
+			<button id="about-button" class="habibi-button" type="button" name="button">About</button>
+		</footer>
+	</div>
+</body>
+</html>
