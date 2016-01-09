@@ -1,4 +1,4 @@
-# [Youtube Cover Video](http://mahdif.github.io/youtube-cover-video/)
+# [English Alphabets Game](http://mahdif.github.io/alphabets-game/)
 A simple game to teach kids the English alphabets.
 
 -----------
