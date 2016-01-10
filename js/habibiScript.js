@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
       generateNewElement(); // Generate new DOM element to restart the animation
     } else {
       letterOnScreen.innerHTML = String.fromCharCode(event.charCode); // getting the pressed character
-      pressedLetter = String.fromCharCode(event.charCode); // passing the pressed letter to the function to add it to sources
+      pressedLetter = String.fromCharCode(event.charCode).toLowerCase(); // passing the pressed letter to the function to add it to sources (lower case because the sound files are in lower case).
       setLetterSound(pressedLetter);
       runAudioPlayer(); // Play sound
       generateNewElement(); // Generate new DOM element to restart the animation
